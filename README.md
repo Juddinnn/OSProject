@@ -5,9 +5,9 @@ Group Name: __Fill your team name__.
 Section: __Fill your class section__. 
 
 Team Mates:
-1. __Fill name__ and __matric no__
-2. __Fill name__ and __matric no__
-3. __Fill name__ and __matric no__
+1.MUHAMMAD FIRDAUS BIN DARMAWAN (2211901)
+2.MUHAMMAD HAFIZUDIN BIN JAMHARI (2217261)
+3.AIZUDDIN ISHQAL BIN ABDULLAH (2216207)
 
 ## Rules
 1. You are allowed to have **3 group** members. *Exception* is allowed **IFF (if and only if)** you are allowed to have 4 group members if you are a **multinational** or a **multigender** group. 
