@@ -80,10 +80,135 @@ codespace
 
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
-1. Run the command **pwd** . ***(1 mark)*** __Fill answer here__.
-2. Run the command **cat /etc/passwd** . ***(1 mark)*** __Fill answer here__.
-3. Run the command **df** . ***(1 mark)*** __Fill answer here__.
-4. Run the command **du** . ***(1 mark)*** __Fill answer here__.
+1. Run the command **pwd** . ***(1 mark)*** 
+/workspaces/OSProject
+2. Run the command **cat /etc/passwd** . ***(1 mark)***
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:101:101:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:104:105::/nonexistent:/usr/sbin/nologin
+codespace:x:1000:1000::/home/codespace:/bin/bash
+sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+3. Run the command **df** . ***(1 mark)***
+Filesystem     1K-blocks     Used Available Use% Mounted on
+overlay         32847680 10380932  20772652  34% /
+tmpfs              65536        0     65536   0% /dev
+shm                65536        8     65528   1% /dev/shm
+/dev/root       30298176 24165828   6115964  80% /vscode
+/dev/sda1       46127956       96  43752284   1% /tmp
+/dev/loop3      32847680 10380932  20772652  34% /workspaces
+4. Run the command **du** . ***(1 mark)*** 
+1972    ./images
+8       ./.git/logs/refs/heads
+12      ./.git/logs/refs/remotes/origin
+16      ./.git/logs/refs/remotes
+28      ./.git/logs/refs
+36      ./.git/logs
+4       ./.git/lfs/tmp
+8       ./.git/lfs
+8       ./.git/info
+68      ./.git/hooks
+8       ./.git/objects/fd
+8       ./.git/objects/79
+8       ./.git/objects/a3
+8       ./.git/objects/71
+8       ./.git/objects/f6
+8       ./.git/objects/fa
+12      ./.git/objects/14
+12      ./.git/objects/3d
+12      ./.git/objects/29
+12      ./.git/objects/6e
+8       ./.git/objects/b9
+8       ./.git/objects/4a
+12      ./.git/objects/72
+8       ./.git/objects/74
+12      ./.git/objects/70
+12      ./.git/objects/2e
+12      ./.git/objects/17
+8       ./.git/objects/d8
+12      ./.git/objects/c0
+4       ./.git/objects/info
+12      ./.git/objects/e5
+8       ./.git/objects/81
+12      ./.git/objects/62
+8       ./.git/objects/11
+12      ./.git/objects/d2
+8       ./.git/objects/e9
+12      ./.git/objects/af
+16      ./.git/objects/fb
+8       ./.git/objects/f2
+8       ./.git/objects/96
+8       ./.git/objects/1b
+8       ./.git/objects/0d
+8       ./.git/objects/b6
+8       ./.git/objects/3a
+8       ./.git/objects/b2
+12      ./.git/objects/ff
+8       ./.git/objects/83
+8       ./.git/objects/86
+12      ./.git/objects/64
+8       ./.git/objects/52
+8       ./.git/objects/ab
+8       ./.git/objects/93
+8       ./.git/objects/a4
+8       ./.git/objects/0b
+12      ./.git/objects/73
+12      ./.git/objects/90
+8       ./.git/objects/c3
+8       ./.git/objects/fe
+8       ./.git/objects/4f
+12      ./.git/objects/b5
+8       ./.git/objects/58
+8       ./.git/objects/cb
+16      ./.git/objects/1c
+12      ./.git/objects/44
+8       ./.git/objects/fc
+8       ./.git/objects/c6
+8       ./.git/objects/7b
+8       ./.git/objects/24
+8       ./.git/objects/60
+8       ./.git/objects/eb
+8       ./.git/objects/91
+8       ./.git/objects/49
+8       ./.git/objects/3f
+8       ./.git/objects/47
+8       ./.git/objects/cd
+12      ./.git/objects/bd
+1828    ./.git/objects/pack
+8       ./.git/objects/20
+8       ./.git/objects/a6
+8       ./.git/objects/e7
+8       ./.git/objects/41
+8       ./.git/objects/4b
+8       ./.git/objects/04
+2500    ./.git/objects
+8       ./.git/refs/heads
+4       ./.git/refs/tags
+12      ./.git/refs/remotes/origin
+16      ./.git/refs/remotes
+32      ./.git/refs
+4       ./.git/branches
+2692    ./.git
+4688    .
 5. Run the command **ls** . ***(1 mark)*** __Fill answer here__.
 6. Run the command **ls -asl** . ***(1 mark)*** __Fill answer here__.
 7. Run the command **free -h** . ***(1 mark)*** __Fill answer here__.
