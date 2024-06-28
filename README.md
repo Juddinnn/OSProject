@@ -81,10 +81,14 @@ codespace
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
 1. Run the command **pwd** . ***(1 mark)*** 
-```@Juddinnn ➜ /workspaces/OSProject (main) $ whoami```
-```/workspaces/OSProject```
+```bash
+@Juddinnn ➜ /workspaces/OSProject (main) $ whoami
+/workspaces/OSProject
+```
+
 2. Run the command **cat /etc/passwd** . ***(1 mark)***
-```root:x:0:0:root:/root:/bin/bash```
+```bash
+root:x:0:0:root:/root:/bin/bash```
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
 sys:x:3:3:sys:/dev:/usr/sbin/nologin
@@ -109,7 +113,10 @@ systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
 messagebus:x:104:105::/nonexistent:/usr/sbin/nologin
 codespace:x:1000:1000::/home/codespace:/bin/bash
 sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+```
+
 3. Run the command **df** . ***(1 mark)***
+```bash
 Filesystem     1K-blocks     Used Available Use% Mounted on
 overlay         32847680 10380932  20772652  34% /
 tmpfs              65536        0     65536   0% /dev
@@ -210,12 +217,130 @@ shm                65536        8     65528   1% /dev/shm
 4       ./.git/branches
 2692    ./.git
 4688    .
+```
 5. Run the command **ls** . ***(1 mark)*** __Fill answer here__.
+```bash
+@Juddinnn ➜ /workspaces/OSProject (main) $ ls
+README.md  images
+```
 6. Run the command **ls -asl** . ***(1 mark)*** __Fill answer here__.
+```bash
+@Juddinnn ➜ /workspaces/OSProject (main) $ ls -asl
+total 40
+ 4 drwxrwxrwx+ 4 codespace root  4096 Jun 27 07:15 .
+ 4 drwxr-xrwx+ 5 codespace root  4096 Jun 27 07:16 ..
+ 4 drwxrwxrwx+ 9 codespace root  4096 Jun 27 07:31 .git
+24 -rw-rw-rw-  1 codespace root 21760 Jun 28 01:09 README.md
+ 4 drwxrwxrwx+ 2 codespace root  4096 Jun 27 07:15 images
+ ```
 7. Run the command **free -h** . ***(1 mark)*** __Fill answer here__.
+```bash
+@Juddinnn ➜ /workspaces/OSProject (main) $ free -h
+              total        used        free      shared  buff/cache   available
+Mem:          7.7Gi       1.3Gi       239Mi        64Mi       6.2Gi       6.0Gi
+Swap:            0B          0B          0B
+```
 8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __Fill answer here__.
+```bash
+@Juddinnn ➜ /workspaces/OSProject (main) $ cat  /proc/cpuinfo
+processor       : 0
+vendor_id       : AuthenticAMD
+cpu family      : 25
+model           : 1
+model name      : AMD EPYC 7763 64-Core Processor
+stepping        : 1
+microcode       : 0xffffffff
+cpu MHz         : 3074.428
+cache size      : 512 KB
+physical id     : 0
+siblings        : 2
+core id         : 0
+cpu cores       : 1
+apicid          : 0
+initial apicid  : 0
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 13
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext invpcid_single vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
+bugs            : sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass srso
+bogomips        : 4890.85
+TLB size        : 2560 4K pages
+clflush size    : 64
+cache_alignment : 64
+address sizes   : 48 bits physical, 48 bits virtual
+power management:
+
+processor       : 1
+vendor_id       : AuthenticAMD
+cpu family      : 25
+model           : 1
+model name      : AMD EPYC 7763 64-Core Processor
+stepping        : 1
+microcode       : 0xffffffff
+cpu MHz         : 3243.374
+cache size      : 512 KB
+physical id     : 0
+siblings        : 2
+core id         : 0
+cpu cores       : 1
+apicid          : 1
+initial apicid  : 1
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 13
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext invpcid_single vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
+bugs            : sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass srso
+bogomips        : 4890.85
+TLB size        : 2560 4K pages
+clflush size    : 64
+cache_alignment : 64
+address sizes   : 48 bits physical, 48 bits virtual
+power management:
+```
 9. Run the command **top** and type **q** to quit. ***(1 mark)*** __Fill answer here__.
+```bash
+processor       : 1
+vendor_id       : AuthenticAMD
+cpu family      : 25
+model           : 1
+model name      : AMD EPYC 7763 64-Core Processor
+stepping        : 1
+microcode       : 0xffffffff
+cpu MHz         : 3243.374
+cache size      : 512 KB
+physical id     : 0
+siblings        : 2
+core id         : 0
+cpu cores       : 1
+apicid          : 1
+initial apicid  : 1
+fpu             : yes
+top - 01:11:05 up 44 min,  0 users,  load average: 0.24, 0.27, 0.18
+Tasks:  20 total,   1 running,  19 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7929.6 total,    241.9 free,   1358.9 used,   6328.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6191.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                                               
+      1 codespa+  20   0    1136    640    640 S   0.0   0.0   0:00.02 docker-init                                                                                           
+      7 codespa+  20   0    7236   1792   1792 S   0.0   0.0   0:00.02 sleep                                                                                                 
+     22 root      20   0   12196   3480   2560 S   0.0   0.0   0:00.00 sshd                                                                                                  
+    354 codespa+  20   0    2616   1536   1536 S   0.0   0.0   0:00.01 sh                                                                                                    
+    386 root      20   0    2616   1408   1408 S   0.0   0.0   0:00.00 sh                                                                                                    
+    546 codespa+  20   0    2624   1536   1536 S   0.0   0.0   0:00.01 sh                                                                                                    
+    555 codespa+  20   0 1311732  85004  45056 S   0.0   1.0   0:03.62 node                                                                                                  
+    575 codespa+  20   0   21.5g 350312  49920 S   0.0   4.3   0:13.63 node                                                                                                  
+    589 codespa+  20   0 1240564  52732  41216 S   0.0   0.6   0:00.20 node                                                                                                  
+   1007 codespa+  20   0 1006956  71608  40576 S   0.0   0.9   0:01.73 node                                                                                                  
+   1027 codespa+  20   0 1106568  59756  42112 S   0.0   0.7   0:00.65 node 
+   ```
 10. Run the command **uname -a**. ***(1 mark)*** __Fill answer here__.
+```bash
+@Juddinnn ➜ /workspaces/OSProject (main) $ uname -a
+Linux codespaces-2c229e 6.5.0-1022-azure #23~22.04.1-Ubuntu SMP Thu May  9 17:59:24 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+```
 11. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
 12. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
 13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
