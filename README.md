@@ -494,8 +494,10 @@ eabbe53cbc80   debian    "bash"               16 minutes ago   Up 16 minutes    
 @Juddinnn ➜ /workspaces/OSProject/webpage (main) $ docker exec -it elated_hertz /bin/bash
 root@826dd602866a:/usr/local/apache2# 
 ```
-2. What port is the apache web server running. ***(1 mark)*** __Apache web server running on port 80__.
-3. What port is open for http protocol on the host machine? ***(1 mark)*** __Port 8080 is open for HTTP protocol on the host machine__.
+2. What port is the apache web server running. ***(1 mark)*** 
+__Apache web server running on port 80__.
+3. What port is open for http protocol on the host machine? ***(1 mark)*** 
+__Port 8080 is open for HTTP protocol on the host machine__.
 
 ## Create SUB Networks
 
