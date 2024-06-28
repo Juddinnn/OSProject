@@ -301,40 +301,24 @@ power management:
 ```
 9. Run the command **top** and type **q** to quit. ***(1 mark)*** __Fill answer here__.
 ```bash
-processor       : 1
-vendor_id       : AuthenticAMD
-cpu family      : 25
-model           : 1
-model name      : AMD EPYC 7763 64-Core Processor
-stepping        : 1
-microcode       : 0xffffffff
-cpu MHz         : 3243.374
-cache size      : 512 KB
-physical id     : 0
-siblings        : 2
-core id         : 0
-cpu cores       : 1
-apicid          : 1
-initial apicid  : 1
-fpu             : yes
-top - 01:11:05 up 44 min,  0 users,  load average: 0.24, 0.27, 0.18
-Tasks:  20 total,   1 running,  19 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :   7929.6 total,    241.9 free,   1358.9 used,   6328.8 buff/cache
-MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6191.4 avail Mem 
+top - 01:15:24 up 48 min,  0 users,  load average: 0.21, 0.17, 0.15
+Tasks:  17 total,   1 running,  16 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.2 us,  4.9 sy,  0.0 ni, 90.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7929.6 total,    187.8 free,   1364.7 used,   6377.1 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6185.1 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                                               
-      1 codespa+  20   0    1136    640    640 S   0.0   0.0   0:00.02 docker-init                                                                                           
+    555 codespa+  20   0 1312500  86580  45184 S   0.7   1.1   0:04.24 node                                                                                                  
+    575 codespa+  20   0   21.5g 330236  49920 S   0.7   4.1   0:18.86 node                                                                                                  
+      1 codespa+  20   0    1136    640    640 S   0.0   0.0   0:00.03 docker-init                                                                                           
       7 codespa+  20   0    7236   1792   1792 S   0.0   0.0   0:00.02 sleep                                                                                                 
      22 root      20   0   12196   3480   2560 S   0.0   0.0   0:00.00 sshd                                                                                                  
     354 codespa+  20   0    2616   1536   1536 S   0.0   0.0   0:00.01 sh                                                                                                    
     386 root      20   0    2616   1408   1408 S   0.0   0.0   0:00.00 sh                                                                                                    
     546 codespa+  20   0    2624   1536   1536 S   0.0   0.0   0:00.01 sh                                                                                                    
-    555 codespa+  20   0 1311732  85004  45056 S   0.0   1.0   0:03.62 node                                                                                                  
-    575 codespa+  20   0   21.5g 350312  49920 S   0.0   4.3   0:13.63 node                                                                                                  
-    589 codespa+  20   0 1240564  52732  41216 S   0.0   0.6   0:00.20 node                                                                                                  
-   1007 codespa+  20   0 1006956  71608  40576 S   0.0   0.9   0:01.73 node                                                                                                  
-   1027 codespa+  20   0 1106568  59756  42112 S   0.0   0.7   0:00.65 node 
+    589 codespa+  20   0 1240564  52988  41216 S   0.0   0.7   0:00.22 node                                                                                                  
+   1007 codespa+  20   0 1018004  68844  40576 S   0.0   0.8   0:02.16 node                                                                                                  
+   1027 codespa+  20   0 1107256  62104  42112 S   0.0   0.8   0:00.93 node  
    ```
 10. Run the command **uname -a**. ***(1 mark)*** __Fill answer here__.
 ```bash
@@ -342,12 +326,37 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6191.4 avail Mem
 Linux codespaces-2c229e 6.5.0-1022-azure #23~22.04.1-Ubuntu SMP Thu May  9 17:59:24 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
 ```
 11. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
+```bash
+6185.1 avail Mem
+```
 12. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
+```bash
+20772652 (20GB)
+```
 13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
+```bash
+Version: Ubuntu 22.04.1
+Hardware Architecture: x86_64
+```
 14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
+```bash
+ls : Lists the names of files and directories in the current directory.
+ls -asl : Lists detailed information about files and directories in the current directory, including all files (even hidden ones), sizes, and permissions.
+```
 15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
+```bash
+TLB size        : 2560 4K pages
+```
 16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
+```bash
+cpu MHz         : 3074.428
+```
+
 17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+```bash
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                                               
+    555 codespa+  20   0 1312500  86580  45184 S   0.7   1.1   0:04.24 node    
+```
 
 ## Running your own container instance.
 
